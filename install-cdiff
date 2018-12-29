@@ -1,0 +1,7 @@
+
+sudo apt-get install python-pip
+sudo pip install --upgrade cdiff
+
+alias mycdiff='cdiff -s -w 150'
+
+

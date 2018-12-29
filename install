@@ -1,0 +1,20 @@
+
+cp .vimrc ~/
+
+# Adding alias to the bash rc file. 
+#cp .bashrc ~/
+echo "alias ll='ls -al'" >> ~/.bashrc
+echo "alias mycdiff='cdiff -s -w 150'" >> ~/.bashrc
+echo "source ~/.myscript/myfunction" >> ~/.bashrc
+echo "source ~/.myscript/acd_func.sh" >> ~/.bashrc
+
+cp -rf .vim/ ~/
+cp -rf .myscript ~/
+#cp .ssh/config ~/.ssh/
+
+cp .ctags ~/
+
+source ~/.bashrc
+
+sudo apt-get install exuberant-ctags
+

@@ -1,0 +1,35 @@
+function mygrep {
+	if [ -z "$1" ]; then
+		echo Grep *.c, h, cpp, mk, Makefile, config, linux_kernel_config, inc, env, sh
+		echo Usage - mygrep xxxx
+	else
+		grep -irnw --exclude-dir='.svn' --include=*.[c,h,cpp,mk,inc,env,lua,py,m,java] --include=Makefile* --include=.config* --include=linux_kernel_config "$1" ./;
+	fi						    
+}
+
+function mkgrep {
+	if [ -z "$1" ]; then
+		echo Grep only for *.mk, Makefile, .config
+		echo Usage - mkgrep xxxx
+	else
+		grep -irwn --exclude-dir=".svn" --include=*.mk --include=Makefile* --include=\.config* "$1" ./;
+	fi
+}
+
+function myfind {
+	if [ -z "$1" ]; then
+		echo Find exclude .svn 
+		echo Usage - find xxxx
+	else
+		find . -type f \( -iname "*$1*" -not -path "*.svn*" \)
+	fi
+}
+
+function myhelp {
+	echo Woody functions help 
+	echo    mygrep xxx : search xxx for c, h, cpp, mk, Makefile, .config 
+	echo    mkgrep xxx : search xxx for .mk, Makefile, .config
+	echo    myfind xxx : find files with name of xxx
+	echo    -- all search functions exclude .svn directory.
+	echo    -- Copyright 2014.4.10, woody lee, Belkin international. 
+}
