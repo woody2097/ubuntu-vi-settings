@@ -1,18 +1,11 @@
 # ubuntu-vi-settings
 
-This repository will help to setup VI environment on Ubuntu.
+Ubuntu-vi-settings will help you to setup VI as a visual IDE on Ubuntu,
+based on various plug-ins. 
 
-## Screen shot
 <p align="center">
   <img src="https://github.com/woody2097/ubuntu-vi-settings/blob/master/ubuntu-vi-settings.png" alt="Screen shot" width="1080px"> 
 </p>
-
-## Features (Shortcut)
-* File explorer window on the left panel (F4) 
-* Function List window on the right panel (F8) 
-* Keyword search (F3) 
-* Bookmark (mm)
-* Go to the definition: "]", go back: "t"
 
 
 ## VI Plugins included
@@ -46,6 +39,30 @@ ctags -R
 
 ## Usage
 
+### Vi env  
+* 4 spaces added instead of tab.
+* Display Line number
+
+### Vi shortcut
+* File explorer panel toggle: F4
+* Function List panel toggle: F8
+* jump to the definition: 
+  * jump into: ] 
+  * back: t
+* Keyword search: F3 
+* Search from the current file: 
+  * forward: *
+  * backward: #
+  * Turn off highlight: space, \    
+* Window
+  * split vertical: w v
+  * split horizontal: w s 
+  * close: w c
+  * move to the right window: w -> 
+  * move to the left window: w <-
+* Exit to command line: Ctrl + z, back: fg
+
+
 ### File Explorer (Left panel)
 * I: Show hidden files
 * R: Refresh
@@ -67,13 +84,6 @@ ctags -R
 | Save all bookmarks to a file                    |             | `:BookmarkSave <FILE_PATH>`  |
 | Load bookmarks from a file                      |             | `:BookmarkLoad <FILE_PATH>`  |
 ```
-
-### Code browsing
-* ]: jump to definition
-* t: back to previous position
-* F3: Keyword search 
-* F4: File explorer window toggle 
-* F8: Function window toggle
 
 
 
