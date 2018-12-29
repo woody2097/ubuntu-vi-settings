@@ -1,7 +1,7 @@
 # ubuntu-vi-settings
 
 Ubuntu-vi-settings will help you to setup VI as a visual IDE on Ubuntu,
-based on various plug-ins. 
+based on various plugins. 
 
 <p align="center">
   <img src="https://github.com/woody2097/ubuntu-vi-settings/blob/master/ubuntu-vi-settings.png" alt="Screen shot" width="1080px"> 
