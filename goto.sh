@@ -1,6 +1,8 @@
 #!/bin/sh
 # Woody Lee 2017.7.17 
 
+cd /cygdrive/c/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v1.1/
+
 portable_root="/home/woody/project/portable/"
 portable_build=$portable_root"aYocto/build/"
 portable_build_kernel=$portable_build"tmp/work/am335x_ventus-poky-linux-gnue\
